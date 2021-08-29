@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{$greeting}<br/><br/>
+{$greeting_login}<br/><br/>
+<form action="/login/index" method="post">
+    <input type="text" name="username" value="" size="50" placeholder="input your username"/>
+    <input type="text" name="password" value="" size="50" placeholder="input your password"/>
+    <input type="hidden" name="__token__" value="{:token()}" size="50"/>
+    <input type="submit" value="submit"/>
+</form>
+
+</body>
+</html>
